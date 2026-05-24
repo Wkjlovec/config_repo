@@ -1,0 +1,6 @@
+{
+  "hop.nvim": { "branch": "v2", "commit": "90db1b2c61b820e230599a04fedcd2679e64bd07" },
+  "jb.nvim": { "branch": "main", "commit": "5aa977eb29c758a4ff0e82ac75c45d7f8cacfe50" },
+  "lazy.nvim": { "branch": "main", "commit": "e6a8824858757ca9cd4f5ae1a72d845fa5c46a39" },
+  "multicursor.nvim": { "branch": "1.0", "commit": "704b99f10a72cc05d370cfeb294ff83412a8ab55" }
+}

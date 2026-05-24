@@ -1,0 +1,10 @@
+{
+  "theme": "One Dark",
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 15,
+  "ui_font_size": 15,
+  "soft_wrap": "editor_width",
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "vim_mode": false
+}

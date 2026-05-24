@@ -1,0 +1,33 @@
+.DS_Store
+Thumbs.db
+
+# Local env and secrets.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.mobileconfig
+id_rsa*
+id_ed25519*
+secrets.*
+*token*
+*secret*
+
+# IDE/editor noise.
+.idea/
+.vscode/extensions/
+*.code-workspace
+
+# Build/cache output.
+node_modules/
+target/
+dist/
+build/
+.cache/
+.gradle/
+
+# Windows collected files that may contain private machine data.
+windows-reference/**/History*
+windows-reference/**/Cache*

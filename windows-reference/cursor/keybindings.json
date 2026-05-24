@@ -1,0 +1,170 @@
+// Place your key bindings in this file to override the defaults
+[
+  { "key": "ctrl+p", "command": "cursorUp",             "when": "editorTextFocus && !suggestWidgetVisible" },
+  { "key": "ctrl+p", "command": "selectPrevSuggestion", "when": "suggestWidgetVisible && textInputFocus" },
+
+  { "key": "ctrl+n", "command": "cursorDown",           "when": "editorTextFocus && !suggestWidgetVisible" },
+  { "key": "ctrl+n", "command": "selectNextSuggestion", "when": "suggestWidgetVisible && textInputFocus" },
+
+  { "key": "ctrl+b", "command": "cursorLeft",           "when": "editorTextFocus" },
+
+  { "key": "ctrl+w", "command": "deleteWordLeft",       "when": "editorTextFocus && !editorReadonly" },
+  { "key": "ctrl+w", "command": "-workbench.action.closeActiveEditor" },
+
+  { "key": "ctrl+u", "command": "deleteWordPartLeft",   "when": "editorTextFocus && !editorReadonly" },
+
+  { "key": "alt+0",  "command": "workbench.action.terminal.toggleTerminal" },
+  { "key": "alt+1",  "command": "workbench.action.toggleSidebarVisibility" },
+  {
+    "key": "alt+s",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  // remove vscode bindings
+  {
+    "key": "ctrl+e",
+    "command": "-cursor.toggleAgentWindowIDEUnification",
+    "when": "!isGlass && workbenchState != 'empty'"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+    "when": "accessibilityHelpIsShown"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-glass.openChangesTab",
+    "when": "isGlassAgentWorkspace"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-glass.openChangesTab",
+    "when": "isGlassAgentWorkspace && terminalFocusInAny"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-workbench.action.chat.startVoiceChat",
+    "when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-workbench.action.chat.stopListeningAndSubmit",
+    "when": "inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'editor' || inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'inline' || inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'quick' || inChatInput && voiceChatInProgress && scopedVoiceChatInProgress == 'view' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'editor' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'inline' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'quick' || inlineChatFocused && voiceChatInProgress && scopedVoiceChatInProgress == 'view'"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-workbench.action.terminal.chat.start",
+    "when": "chatIsEnabled && terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || chatIsEnabled && terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat2.reveal",
+    "when": "inlineChatHasEditsAgent && !chatEdits.isGlobalEditingSession && chatEdits.requestCount >= 1"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat2.stop",
+    "when": "inlineChatHasEditsAgent && inlineChatVisible && chatEdits.requestCount == '0'"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-composer.startComposerPrompt"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-search.action.searchWithAI",
+    "when": "hasAIResultProviderKey && searchViewletFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !isGlass && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-focusSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus && !isGlass && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-glass.focusInput",
+    "when": "isGlassAgentWorkspace"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-glass.insertSelectionIntoGlassComposer",
+    "when": "isGlassAgentWorkspace && glassActiveTabKind == 'file' || isGlassAgentWorkspace && glassActiveTabKind == 'terminal' || glassDiffLineSelectionActive && isGlassAgentWorkspace && glassActiveTabKind == 'diff' || glassDiffLineSelectionActive && isGlassAgentWorkspace && glassActiveTabKind == 'pr'"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat.holdForSpeech",
+    "when": "hasSpeechProvider && inlineChatVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-notebook.cell.chat.start",
+    "when": "config.notebook.experimental.cellChat && notebookChatAgentRegistered && notebookEditable && notebookEditorFocused && !inputFocus || config.notebook.experimental.generate && notebookChatAgentRegistered && notebookEditable && notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus && !isGlass"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-workbench.action.chat.holdToVoiceChatInChatView",
+    "when": "chatIsEnabled && hasSpeechProvider && !chatSessionRequestInProgress && !editorFocus && !inChatInput && !inlineChatFocused && !notebookEditorFocused && !searchViewletFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-workbench.action.terminal.suggestToggleDetails",
+    "when": "simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+  },
+{
+    "key": "ctrl+w",
+    "command": "-glass.closeWindow",
+    "when": "glassNoModalOpen && isGlassEmptyWorkspace && !glassEditorPanelVisible && !glassTilesetRemovableTileFocused"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-glass.closeActiveTab",
+    "when": "glassEditorPanelVisible && isGlassAgentWorkspace"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-glass.removeTileFromTilesetFromKeyboard",
+    "when": "glassNoModalOpen && glassTilesetRemovableTileFocused && isGlassEmptyWorkspace && !glassEditorPanelVisible && !terminalFocusInAny"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-glass.closeGlassSettings",
+    "when": "glassNoModalOpen && isGlassEmptyWorkspace && isSettingsPaneOpen"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeGroup",
+    "when": "activeEditorGroupEmpty && isAuxiliaryEditorPart || activeEditorGroupEmpty && multipleEditorGroups || activeEditorGroupEmpty && auxiliaryBarVisible && cursor.chatEditorGroup.enabled"
+  }
+
+]

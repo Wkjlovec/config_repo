@@ -1,0 +1,150 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "alwaysShowTabs": true,
+    "centerOnLaunch": false,
+    "copyFormatting": "none",
+    "copyOnSelect": true,
+    "defaultProfile": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
+    "disableAnimations": false,
+    "firstWindowPreference": "defaultProfile",
+    "focusFollowMouse": true,
+    "initialCols": 90,
+    "initialPosition": "0,0",
+    "initialRows": 60,
+    "keybindings": 
+    [
+        {
+            "id": null,
+            "keys": "enter"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.FindText",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        }
+    ],
+    "launchMode": "default",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "backgroundImage": null,
+            "backgroundImageOpacity": 0,
+            "colorScheme": "Catppuccin Latte",
+            "cursorHeight": 22,
+            "cursorShape": "filledBox",
+            "elevate": false,
+            "font": 
+            {
+                "face": "Cascadia Code",
+                "size": 12,
+                "weight": "medium"
+            },
+            "historySize": 9001,
+            "intenseTextStyle": "none",
+            "opacity": 100,
+            "padding": "0",
+            "scrollbarState": "visible",
+            "useAcrylic": false
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "\u547d\u4ee4\u63d0\u793a\u7b26"
+            },
+            {
+                "colorScheme": "Catppuccin Latte",
+                "elevate": true,
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
+                "hidden": false,
+                "name": "Nushell",
+                "source": "nu"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#EFF1F5",
+            "black": "#5C5F77",
+            "blue": "#1E66F5",
+            "brightBlack": "#6C6F85",
+            "brightBlue": "#1E66F5",
+            "brightCyan": "#179299",
+            "brightGreen": "#40A02B",
+            "brightPurple": "#EA76CB",
+            "brightRed": "#D20F39",
+            "brightWhite": "#BCC0CC",
+            "brightYellow": "#DF8E1D",
+            "cursorColor": "#DC8A78",
+            "cyan": "#179299",
+            "foreground": "#4C4F69",
+            "green": "#40A02B",
+            "name": "Catppuccin Latte",
+            "purple": "#EA76CB",
+            "red": "#D20F39",
+            "selectionBackground": "#ACB0BE",
+            "white": "#ACB0BE",
+            "yellow": "#DF8E1D"
+        },
+        {
+            "background": "#282C34",
+            "black": "#3F4451",
+            "blue": "#61AFEF",
+            "brightBlack": "#4F5666",
+            "brightBlue": "#4DC4FF",
+            "brightCyan": "#4CD1E0",
+            "brightGreen": "#A5E075",
+            "brightPurple": "#DE73FF",
+            "brightRed": "#BE5046",
+            "brightWhite": "#E6E6E6",
+            "brightYellow": "#E5C07B",
+            "cursorColor": "#528BFF",
+            "cyan": "#56B6C2",
+            "foreground": "#ABB2BF",
+            "green": "#98C379",
+            "name": "One Dark Pro",
+            "purple": "#C678DD",
+            "red": "#E06C75",
+            "selectionBackground": "#ABB2BF",
+            "white": "#D7DAE0",
+            "yellow": "#D19A66"
+        }
+    ],
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": false,
+    "theme": "light",
+    "themes": [],
+    "useAcrylicInTabRow": false,
+    "windowingBehavior": "useNew"
+}
